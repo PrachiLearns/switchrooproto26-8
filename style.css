@@ -1,0 +1,20 @@
+.cards{
+ margin: 10px;
+ padding:20px;
+ background-color:brown;
+ text-align: center;
+ border-block: 5px;
+ max-width:120px;
+ min-width: 120px;
+}
+
+.cp, .ncp{
+    
+    border-color:teal;
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px;
+    padding: 30px;
+    width:max-content
+}
+

@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="card.js"> </script>
+    <script src="Player.js"> </script>
+    <script src="game.js"> </script>
+    <script src="form.js"> </script>
+    <script src="chatboxCp.js"></script>
+    <script src="chatboxNcp.js"></script>
+    
+    <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDu9o8Z4m88sq61U6SfKCb3lg0lTwpYOJ4",
+              authDomain: "skeedroo-game.firebaseapp.com",
+              databaseURL: "https://skeedroo-game.firebaseio.com",
+              projectId: "skeedroo-game",
+              storageBucket: "skeedroo-game.appspot.com",
+              messagingSenderId: "472291019701",
+              appId: "1:472291019701:web:0d756c66c415fa60c2a7fc"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+    
+
+    
+    <title>SketchRoo</title>
+</head>
+<body>
+    <script src="sketch.js"> </script>  
+    <img src="./gamelogo.png" style="margin: 100px;">
+    <div >
+        <input type="input" id="entername" class="form-control" placeholder="Enter Your Name" style="display: block;"/>
+        <button id="play" class="btn btn-success">Play</button>
+        <button id="howto" type="howto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">How to play?</button>
+      </div>
+    <div class="deckofcards">
+      <img src="./deckofcardsimg.jpeg"
+    </div>
+    <div class="subjectpile"></div>
+    <div class="letterpile"></div>
+    <div class="timer"></div>
+    <div class="score"></div>
+    <div class="chatcp" style="display: none;">
+          <input type="text" placeholder="Enter your answer "class="form-control">
+          <button>Submit</button>
+
+    </div>
+    <div id="ncp" style="display:none" >
+      <p>Are you ok with the answer?</p>
+      <button class="btn btn-success">Yes</button>
+      <button class="btn btn-danger">No</button>
+
+    </div>
+    <div></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">how to play</h4>
+        </div>
+        <div class="modal-body">
+          <p>instr</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
